@@ -1,4 +1,4 @@
-# components
+# vue_src
 
 ## Project setup
 ```
@@ -25,10 +25,17 @@ npm run test
 npm run lint
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### 总体目标:
+常用组件封装指引
+
+### 文件说明
+
+src/views/Home.vue  目录
+
+src/views/Keyboard.vue 移动端车牌号虚拟键盘示例
+
+src/views/Form.vue PC后台筛选框

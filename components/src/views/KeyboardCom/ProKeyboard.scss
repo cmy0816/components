@@ -1,0 +1,75 @@
+.truck-keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding: 20px 2px 2px 2px;
+    .close {
+        position: absolute;
+        top: 0;
+        right: 8px;
+        width: 30px;
+        height: 22px;
+        text-align: center;
+        overflow: hidden;
+        &:before {
+            position: absolute;
+            content: "";
+            border-right: 1px solid #666;
+            border-bottom: 1px solid #666;
+            width: 10px;
+            height: 10px;
+            left: 10px;
+            top: 4px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    .board {
+        .line {
+            font-size: 0;
+            text-align: center;
+            padding: 5px 0;
+            &:after {
+                display: inline-block;
+                content: "";
+                height: 100%;
+            }
+            display:flex;
+            .item {
+                flex: 1;
+                vertical-align: middle;
+                position: relative;
+                text-align: center;
+                &:after {
+                    content: attr(title);
+                    display: inline-block;
+                    border-radius: 3px;
+                    /*min-width:22px;*/
+                    line-height: 25px;
+                    text-align: center;
+                    /*padding:3px;*/
+                    color: #333;
+                    font-size: 14px;
+                    width: calc(100% - 6px);
+                    border: 1px solid #9c9a9c;
+                }
+                &.s {
+                    &:after {
+                        font-size: 12px;
+                    }
+                }
+                &.dis {
+                    &:after {
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
